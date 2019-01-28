@@ -3,6 +3,7 @@ package controller;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -74,7 +75,8 @@ public class Controller implements Initializable  {
 
     @FXML
     void handleButtonExit(MouseEvent event) {
-
+    	Platform.exit();
+        System.exit(0);
     }
 	
 	
@@ -85,7 +87,7 @@ public class Controller implements Initializable  {
 		// TODO Auto-generated method stub
 		
 	}
-	  @FXML
+	 @FXML
 	    private void handleButtonAction(ActionEvent event) {
 	         
 	       
